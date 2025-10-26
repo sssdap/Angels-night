@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Night with Angel — Приглашение</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:wght@500;700&family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Full-screen background video -->
+  <div class="fullscreen-bg">
+    <video autoplay muted loop playsinline class="fullscreen-bg__video">
+      <source src="videos/background.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео в качестве фона.
+    </video>
+    <div class="fullscreen-bg__overlay"></div>
+  </div>
+  
+  <div class="wrap">
+    <header class="hero">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="videos/background.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео в качестве фона.
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="title">A Night with Angel</h1>
+        <a href="#rsvp" class="cta">Присоединиться</a>
+      </div>
+    </header>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <h2 class="section-title">Ноябрь 2025</h2>
+        </div>
+        <div class="calendar">
+          <div class="calendar-weekdays">
+            <div>Пн</div>
+            <div>Вт</div>
+            <div>Ср</div>
+            <div>Чт</div>
+            <div>Пт</div>
+            <div class="weekend">Сб</div>
+            <div class="weekend">Вс</div>
+          </div>
+          <div class="calendar-dates">
+            <div class="calendar-date other-month">28</div>
+            <div class="calendar-date other-month">29</div>
+            <div class="calendar-date other-month">30</div>
+            <div class="calendar-date other-month">31</div>
+            <div class="calendar-date">30</div>
+            <div class="calendar-date weekend event-date">1</div>
+            <div class="calendar-date weekend">2</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="map-container">
+        <h2 class="section-title">Место проведения</h2>
+        <div class="map-wrapper">
+          <div class="map-embed" id="map">
+            <iframe 
+              src="https://yandex.ru/map-widget/v1/?ll=55.950000%2C53.666667&mode=search&oid=1139085543&ol=biz&sll=55.950000%2C53.650000&sspn=0.1%2C0.1&text=%D0%BA%D0%BB%D1%83%D0%B1%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9%20%D1%81%D1%82%D0%B5%D1%80%D0%BB%D0%B8%D1%82%D0%B0%D0%BC%D0%B0%D0%BA&z=16.5&l=map&theme=dark" 
+              width="100%" 
+              height="100%" 
+              frameborder="0" 
+              style="border:0; border-radius: 12px; filter: grayscale(30%) contrast(90%) brightness(0.8);" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+            <div class="map-overlay">
+              <div class="location-info">
+                <h3>Клуб «Большой»</h3>
+                <p><i class="icon-location"></i> г. Стерлитамак, ул. Комсомольская, 18</p>
+                <p><i class="icon-time"></i> Начало в 20:00</p>
+                <a href="https://yandex.ru/maps/org/bolshoy/1139085543/" target="_blank" class="map-link">
+                  <i class="icon-map"></i> Открыть в Яндекс.Картах
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Birthday Message Section -->
+    <section class="card" style="background: rgba(12, 11, 11, 0.8); backdrop-filter: blur(10px);">
+      <div class="message-content" style="font-family: 'Poiret One', sans-serif; font-size: 20px; line-height: 1.8; color: var(--text); text-align: center; padding: 40px 20px;">
+        <p style="font-size: 28px; color: var(--accent); margin-bottom: 20px; font-weight: bold; letter-spacing: 1px;">Дорогие друзья!</p>
+        <p>Совсем скоро у меня день рождения, и я буду невероятно рада отметить его вместе с вами! Хочу пригласить вас на тёплый и весёлый вечер, наполненный общением и прекрасной компанией — вашей!</p>
+        <p>Для меня самое главное — чтобы вы были рядом, разделили этот день и добавили в него ещё больше ярких эмоций. Поэтому я очень прошу: никаких денежных подарков! Ваша улыбка, внимание и хорошее настроение — лучший подарок, о котором я могу мечтать <span style="font-size: 1.2em; vertical-align: middle;">💛</span></p>
+        <p style="font-style: italic; margin: 40px 0 20px !important; font-size: 22px; color: var(--accent); position: relative; display: inline-block; padding: 0 40px;">
+          <span style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); color: var(--accent);">~</span>
+          Обнимаю!
+          <span style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); color: var(--accent);">~</span>
+        </p>
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(212, 194, 155, 0.3);">
+          <p style="font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px;">Dress Code</p>
+          <p style="font-size: 24px; font-weight: bold; letter-spacing: 0.2em; color: var(--text);">TOTAL BLACK</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="rsvp" style="font-family: 'Poiret One', serif;">
+      <h2 class="section-title" style="text-align: center;">Подтверждение участия</h2>
+      <form class="rsvp" id="rsvpForm" action="https://docs.google.com/forms/d/e/1FAIpQLSffZfPkyYJIHo5cjSwQ4krn_X-ZeM-igDORluaYqxpOCRhwkg/formResponse" method="POST" target="hidden-iframe" style="font-family: 'Poiret One', serif;">
+        <!-- Имя -->
+        <input class="input" type="text" name="entry.2005620554" placeholder="Имя" required style="font-family: 'Poiret One', serif;">
+        
+        <!-- Телефон -->
+        <input class="input" type="tel" name="entry.1045781291" placeholder="Телефон (опционально)" style="font-family: 'Poiret One', serif;">
+        
+        <!-- Вариант ответа -->
+        <select class="input" name="entry.1065046570" required style="font-family: 'Poiret One', serif;">
+          <option value="">Выбери ответ</option>
+          <option value="Буду">Буду</option>
+          <option value="Не смогу">Не смогу</option>
+          <option value="Приду с парой">Приду с парой</option>
+        </select>
+        
+        <!-- Комментарий -->
+        <textarea class="input" name="entry.1166974658" rows="3" placeholder="Комментарий (по желанию)" style="font-family: 'Poiret One', serif;"></textarea>
+        
+        <div id="form-message" style="display: none; margin: 15px 0; padding: 15px; border-radius: 4px; text-align: center; font-size: 16px;">
+          Спасибо! Ваш ответ сохранен.
+        </div>
+        
+        <button type="submit" class="btn-gold" style="font-family: 'Poiret One', serif; margin-top: 10px;">Отправить</button>
+      </form>
+      <iframe name="hidden-iframe" id="hidden-iframe" style="display:none"></iframe>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
