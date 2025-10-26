@@ -1,5 +1,36 @@
+// Проверка загрузки видео
+function checkVideoLoad() {
+  const video = document.getElementById('bgVideo');
+  if (!video) return;
+  
+  // Пробуем загрузить видео
+  const sources = video.getElementsByTagName('source');
+  let currentSource = 0;
+  
+  video.addEventListener('error', function() {
+    // Пробуем следующий источник, если есть
+    currentSource++;
+    if (currentSource < sources.length) {
+      video.src = sources[currentSource].src;
+      video.load();
+    } else {
+      console.error('Не удалось загрузить ни один источник видео');
+    }
+  });
+  
+  // Начинаем воспроизведение
+  const playPromise = video.play();
+  if (playPromise !== undefined) {
+    playPromise.catch(error => {
+      console.error('Ошибка воспроизведения видео:', error);
+    });
+  }
+}
+
 // Обработка плавной прокрутки и отправки формы
 document.addEventListener('DOMContentLoaded', function() {
+  // Проверяем загрузку видео
+  checkVideoLoad();
   // Плавная прокрутка к форме
   const ctaButton = document.querySelector('.cta');
   if (ctaButton) {

@@ -13,9 +13,13 @@
 <body>
   <!-- Full-screen background video -->
   <div class="fullscreen-bg">
-    <video autoplay muted loop playsinline class="fullscreen-bg__video">
+    <video autoplay muted loop playsinline class="fullscreen-bg__video" id="bgVideo">
+      <source src="videos/background.mp4" type="video/mp4">
+      <source src="videos/background.MP4" type="video/mp4">
+      <source src="./videos/background.mp4" type="video/mp4">
       <source src="./videos/background.MP4" type="video/mp4">
-      <source src="https://raw.githubusercontent.com/ваш-никнейм/название-репозитория/main/videos/background.MP4" type="video/mp4">
+      <source src="https://ваш-никнейм.github.io/название-репозитория/videos/background.mp4" type="video/mp4">
+      <source src="https://ваш-никнейм.github.io/название-репозитория/videos/background.MP4" type="video/mp4">
       Ваш браузер не поддерживает видео в качестве фона.
     </video>
     <div class="fullscreen-bg__overlay"></div>
@@ -23,14 +27,6 @@
   
   <div class="wrap">
     <header class="hero">
-      <div class="video-background">
-        <video autoplay muted loop playsinline>
-          <source src="./videos/background.MP4" type="video/mp4">
-          <source src="https://raw.githubusercontent.com/ваш-никнейм/название-репозитория/main/videos/background.MP4" type="video/mp4">
-          Ваш браузер не поддерживает видео в качестве фона.
-        </video>
-        <div class="video-overlay"></div>
-      </div>
       <div class="hero-content">
         <h1 class="title">A Night with Angel</h1>
         <a href="#rsvp" class="cta">Присоединиться</a>
